@@ -111,15 +111,38 @@ body.theme-light .theme-toggle-button {
 .theme-toggle-button:hover {
   transform: scale(1.1);
 }
+
+/* Стилі для 1-го завдання */
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+}
+.menu {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+.menu-list {
+  padding-bottom: 10px;
+}
 .text {
   font-size: 20px;
   font-weight: 500;
   color: #424554;
 }
+#datetime-picker {
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 .timer {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif sans-serif;
   font-size: 20px;
   color: #424554;
   display: flex;
@@ -127,13 +150,14 @@ body.theme-light .theme-toggle-button {
   align-items: flex-start;
   justify-content: left;
   gap: 10px;
+  margin-top: 20px;
 }
 .timer span {
   display: block;
 }
 .timer span:nth-child(1) {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .field {
   display: flex;
@@ -141,8 +165,13 @@ body.theme-light .theme-toggle-button {
   align-items: center;
   width: 70px;
 }
+.label {
+  font-size: 15px;
+  font-weight: 300;
+  color: #424554;
+}
 button {
-  padding: 6px 12px;
+  padding: 3px 6px;
   border-radius: 4px;
   color: #424554;
   border: 2px solid #424554;
@@ -153,4 +182,60 @@ button {
 button:hover {
   background-color: #424554;
   color: white;
+}
+
+/* Стилі для 2-го завдання */
+
+.form {
+  padding: 24px 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.form input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  margin: 16px 0;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+label input[type='radio'] {
+  margin-right: 8px;
+}
+
+.form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #45a049;
 }
